@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Suite1">
+	<parameter name = "myName" value="manisha"/>
+	
+	<test name = "test1">
+   
+		<parameter name = "myName" value="Durko"/>
+	  
+		<classes>
+			 <class name = "ParameterizedTest1" />
+			 <class name = "ParamTestWithDataProvider1" />
+			 <!-- <class name = "SampleTest" /> -->
+			 <!-- <class name = "DependencyTestUsingAnnotation" /> -->
+			 <!-- <class name = "TestEmployeeDetails"/> -->
+			 <!-- <class name = "TestNGSimpleTest"/> -->
+		</classes>
+		
+	</test>
+	
+	<!--  
+	   <test name = "test2">  
+		  <groups>
+			 <run>
+				<include name = "functest" />
+			 </run>
+		  </groups>
+		  
+		  <classes>
+			 <class name = "TestEmployeeDetails"/>
+			 <class name = "TestNGSimpleTest"/>
+		  </classes>
+	   </test>
+	-->
+	
+		<test name = "test3">
+	
+			<parameter name = "myName" value="Dragan Master"/>
+			<classes>
+				 <class name = "ParameterizedTest1" />
+			</classes>			
+		</test>
+	
+</suite>
